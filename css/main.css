@@ -1,0 +1,150 @@
+/*Colores*/
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue:  hsl(245, 75%, 52%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+.container{
+    display: flex;
+    min-width: 375px;
+    height: 100vh;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body{
+    max-width: 375px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.imagen{
+    position: relative;
+    background-image: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    min-width: 375px;
+    min-height: 220px;
+    border-top-right-radius:20px ;
+    border-top-left-radius: 20px;
+    margin-bottom: 25px;
+    
+}
+
+.card-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    
+}
+
+.parrafo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.parrafo p{
+    color: gray;
+    margin-top: -5px;
+    line-height: 1.5;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 15px 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.anual p{
+    font-weight: bold;
+}
+
+.price p{
+    color: gray;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+}
+
+
+.costo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;    
+}
+
+.costo div{
+    margin: -15px 0;
+    padding: 0;
+}
+
+
+.pago{
+    background-color: var(--bright-blue);
+    padding: 15px 0;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 15px var(--bright-blue);
+}
+
+.primero :hover{
+    /* color: yellow; */
+    box-shadow: 0px 5px 25px var(--bright-blue); 
+}
+
+.primero{
+    padding-bottom: 30px;
+}
+
+.primero a{
+    text-decoration: none;
+    color: white;
+    /* padding: 10px; */
+    
+}
+
+.cancel{
+    margin-bottom: 45px;
+}
+
+.cancel a{
+    text-decoration: none;
+}
+
+.attribution{
+    margin: auto;
+    width: 50%;
+}
+
+.attribution p{
+    text-align: center;
+}
